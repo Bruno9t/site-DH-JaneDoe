@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -115,10 +119,11 @@ main#contact {
 /* home v2 */
 
 section#concept,
-section#songs {
+section#songs,
+main#contact {
   width: 900px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 40px 0;
 }
 
@@ -135,6 +140,11 @@ section#songs img {
   float: left;
 }
 
+/* .duas-colunas div:nth-child(2) {
+  width: 50%;
+  float: left;
+} */
+
 section#songs li {
   padding: 20px 0;
 }
@@ -142,3 +152,49 @@ section#songs li {
 section#songs li strong {
   color: orange;
 }
+
+section#form-mapa iframe{
+  width: 100%;
+  height: 400px;
+}
+
+form input[type='text'],
+form textarea{
+  width: 100%;
+  padding: 5px;
+  margin:2px 0 10px;
+}
+
+form .form-group{
+  margin:0 0 10px;
+}
+
+form textarea{
+  resize: none;
+  height: 100px;
+}
+
+form button{
+  border:none;
+  padding: 5px 15px;
+  background-color: orange;
+  color:white;
+}
+
+.mapa{
+  padding-left: 20px
+}
+
+
+
+
+
+
+/* section#form-mapa{
+  float: left;
+
+}
+
+section#info-contato{
+  clear: both;
+} */
